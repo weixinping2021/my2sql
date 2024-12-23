@@ -1,4 +1,6 @@
 # my2sql
+在使用的过程中发现工具会忽略ddl语句,有时候在恢复数据的时候需要知道什么时候执行过truncate语句等,会比较不方便.所以在原来的基础上增加了ddl功能,并且多打印出了binlog的创建时间和结束时间.
+需要打印出ddl的时候,使用-sql ddl 即可.会在tmpdir目录增加一个ddl的文件.
 go版MySQL binlog解析工具，通过解析MySQL binlog ，可以生成原始SQL、回滚SQL、去除主键的INSERT SQL等，也可以生成DML统计信息。类似工具有binlog2sql、MyFlash、my2fback等，本工具基于my2fback、binlog_rollback工具二次开发而来。
 
 
