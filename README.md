@@ -1,3 +1,4 @@
+# 根据my2sql进行了优化,使用repl模式时,不需要输入bilog文件名,会自动根据时间进行筛选,还增加了ddl选项,添加了print-ddl 选项,可以打印ddl语句.
 # my2sql
 go版MySQL binlog解析工具，通过解析MySQL binlog ，可以生成原始SQL、回滚SQL、去除主键的INSERT SQL等，也可以生成DML统计信息。类似工具有binlog2sql、MyFlash、my2fback等，本工具基于my2fback、binlog_rollback工具二次开发而来。
 
